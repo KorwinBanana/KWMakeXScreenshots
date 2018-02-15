@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KWHomeViewController.h"
 
 @interface KWHomeIPViewController : UIImagePickerController
+
+@property (nonatomic,strong) KWHomeViewController *homeVc;
 
 @end

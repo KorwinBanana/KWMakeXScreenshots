@@ -8,7 +8,7 @@
 
 #import "KWNavigationViewController.h"
 #import "Utils.h"
-#import <SVProgressHUD/SVProgressHUD.h>
+#import "UIBarButtonItem+KWBarButtonItem.h"
 
 @interface KWNavigationViewController ()<UIGestureRecognizerDelegate>
 
@@ -23,7 +23,7 @@
     //设置导航栏标题——富文本
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
     attrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:19];
-    attrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    attrs[NSForegroundColorAttributeName] = [UIColor blackColor];
     [navBar setTitleTextAttributes:attrs];
     [navBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackground4671172"] forBarMetrics:UIBarMetricsDefault];
 //    [navBar setBackgroundColor:[UIColor blackColor]];
@@ -60,7 +60,6 @@
 //返回上一个控制器
 -(void)back
 {
-    [SVProgressHUD dismiss];
     [self popViewControllerAnimated:YES];
 }
 

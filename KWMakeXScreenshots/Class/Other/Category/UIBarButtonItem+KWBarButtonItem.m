@@ -7,6 +7,7 @@
 //
 
 #import "UIBarButtonItem+KWBarButtonItem.h"
+#import "UIView+KWFrame.h"
 
 @implementation UIBarButtonItem (KWBarButtonItem)
 
@@ -33,8 +34,8 @@
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setTitle:name forState:UIControlStateNormal];
     [btn.titleLabel setFont:[UIFont boldSystemFontOfSize:16]];
-    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
     [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     [btn sizeToFit];
     

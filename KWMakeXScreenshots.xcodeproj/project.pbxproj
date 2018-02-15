@@ -15,6 +15,22 @@
 		0A4E50082034820B003AA4EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E50072034820B003AA4EB /* main.m */; };
 		0A4E50122034820B003AA4EB /* KWMakeXScreenshotsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E50112034820B003AA4EB /* KWMakeXScreenshotsTests.m */; };
 		0A4E501D2034820B003AA4EB /* KWMakeXScreenshotsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E501C2034820B003AA4EB /* KWMakeXScreenshotsUITests.m */; };
+		0A4E503120348284003AA4EB /* KWHomeIPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E503020348284003AA4EB /* KWHomeIPViewController.m */; };
+		0A4E503520348558003AA4EB /* KWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E503320348558003AA4EB /* KWHomeViewController.m */; };
+		0A4E503620348558003AA4EB /* KWHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E503420348558003AA4EB /* KWHomeViewController.xib */; };
+		0A4E505B20348885003AA4EB /* UIView+KWFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E504A20348885003AA4EB /* UIView+KWFrame.m */; };
+		0A4E505C20348885003AA4EB /* UIImage+KWImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E504B20348885003AA4EB /* UIImage+KWImage.m */; };
+		0A4E505D20348885003AA4EB /* UIImage+KWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E504D20348885003AA4EB /* UIImage+KWExtension.m */; };
+		0A4E505E20348885003AA4EB /* UIButton+KWMineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E504E20348885003AA4EB /* UIButton+KWMineButton.m */; };
+		0A4E505F20348885003AA4EB /* UIBarButtonItem+KWBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E504F20348885003AA4EB /* UIBarButtonItem+KWBarButtonItem.m */; };
+		0A4E506020348885003AA4EB /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E505020348885003AA4EB /* Utils.m */; };
+		0A4E506220348885003AA4EB /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E505520348885003AA4EB /* KeychainWrapper.m */; };
+		0A4E506320348885003AA4EB /* NSString+KWMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E505820348885003AA4EB /* NSString+KWMD5.m */; };
+		0A4E506420348885003AA4EB /* NSData+KWAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E505A20348885003AA4EB /* NSData+KWAES.m */; };
+		0A4E506720348A8C003AA4EB /* KWNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E506520348A8C003AA4EB /* KWNavigationViewController.m */; };
+		340D74D6B43F495A39786F63 /* libPods-KWMakeXScreenshots.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F00023BD55D294AD9CDEFE5 /* libPods-KWMakeXScreenshots.a */; };
+		B0E97ED0CDDE0A608F43A749 /* libPods-KWMakeXScreenshotsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F964B006092F15FC1BB43C /* libPods-KWMakeXScreenshotsUITests.a */; };
+		E11F39F647F0DEFE4D1A7BA8 /* libPods-KWMakeXScreenshotsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F13A96A734C18E59D772ECB1 /* libPods-KWMakeXScreenshotsTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +67,40 @@
 		0A4E50182034820B003AA4EB /* KWMakeXScreenshotsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KWMakeXScreenshotsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4E501C2034820B003AA4EB /* KWMakeXScreenshotsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWMakeXScreenshotsUITests.m; sourceTree = "<group>"; };
 		0A4E501E2034820B003AA4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A4E502F20348284003AA4EB /* KWHomeIPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWHomeIPViewController.h; sourceTree = "<group>"; };
+		0A4E503020348284003AA4EB /* KWHomeIPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWHomeIPViewController.m; sourceTree = "<group>"; };
+		0A4E503220348558003AA4EB /* KWHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWHomeViewController.h; sourceTree = "<group>"; };
+		0A4E503320348558003AA4EB /* KWHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWHomeViewController.m; sourceTree = "<group>"; };
+		0A4E503420348558003AA4EB /* KWHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KWHomeViewController.xib; sourceTree = "<group>"; };
+		0A4E504620348885003AA4EB /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		0A4E504720348885003AA4EB /* UIBarButtonItem+KWBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+KWBarButtonItem.h"; sourceTree = "<group>"; };
+		0A4E504820348885003AA4EB /* UIButton+KWMineButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KWMineButton.h"; sourceTree = "<group>"; };
+		0A4E504920348885003AA4EB /* UIImage+KWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KWExtension.h"; sourceTree = "<group>"; };
+		0A4E504A20348885003AA4EB /* UIView+KWFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KWFrame.m"; sourceTree = "<group>"; };
+		0A4E504B20348885003AA4EB /* UIImage+KWImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KWImage.m"; sourceTree = "<group>"; };
+		0A4E504D20348885003AA4EB /* UIImage+KWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KWExtension.m"; sourceTree = "<group>"; };
+		0A4E504E20348885003AA4EB /* UIButton+KWMineButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KWMineButton.m"; sourceTree = "<group>"; };
+		0A4E504F20348885003AA4EB /* UIBarButtonItem+KWBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+KWBarButtonItem.m"; sourceTree = "<group>"; };
+		0A4E505020348885003AA4EB /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		0A4E505120348885003AA4EB /* UIView+KWFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KWFrame.h"; sourceTree = "<group>"; };
+		0A4E505220348885003AA4EB /* UIImage+KWImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KWImage.h"; sourceTree = "<group>"; };
+		0A4E505520348885003AA4EB /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		0A4E505620348885003AA4EB /* NSString+KWMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KWMD5.h"; sourceTree = "<group>"; };
+		0A4E505720348885003AA4EB /* NSData+KWAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+KWAES.h"; sourceTree = "<group>"; };
+		0A4E505820348885003AA4EB /* NSString+KWMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KWMD5.m"; sourceTree = "<group>"; };
+		0A4E505920348885003AA4EB /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		0A4E505A20348885003AA4EB /* NSData+KWAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+KWAES.m"; sourceTree = "<group>"; };
+		0A4E506520348A8C003AA4EB /* KWNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWNavigationViewController.m; sourceTree = "<group>"; };
+		0A4E506620348A8C003AA4EB /* KWNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWNavigationViewController.h; sourceTree = "<group>"; };
+		1041CFE75207C4EDFD7540FD /* Pods-KWMakeXScreenshots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWMakeXScreenshots.release.xcconfig"; path = "Pods/Target Support Files/Pods-KWMakeXScreenshots/Pods-KWMakeXScreenshots.release.xcconfig"; sourceTree = "<group>"; };
+		3F00023BD55D294AD9CDEFE5 /* libPods-KWMakeXScreenshots.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KWMakeXScreenshots.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		598D5DD2A446F9F8A24298D1 /* Pods-KWMakeXScreenshotsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWMakeXScreenshotsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KWMakeXScreenshotsUITests/Pods-KWMakeXScreenshotsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5F2A061E0864EC7CAB9714F4 /* Pods-KWMakeXScreenshotsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWMakeXScreenshotsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KWMakeXScreenshotsUITests/Pods-KWMakeXScreenshotsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5AE72D37BFE5D434FA3FB90 /* Pods-KWMakeXScreenshotsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWMakeXScreenshotsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KWMakeXScreenshotsTests/Pods-KWMakeXScreenshotsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7F964B006092F15FC1BB43C /* libPods-KWMakeXScreenshotsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KWMakeXScreenshotsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F13A96A734C18E59D772ECB1 /* libPods-KWMakeXScreenshotsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KWMakeXScreenshotsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F755AB8C13DD40F17023F4F7 /* Pods-KWMakeXScreenshotsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWMakeXScreenshotsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KWMakeXScreenshotsTests/Pods-KWMakeXScreenshotsTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE2505E596315B563B2AF18F /* Pods-KWMakeXScreenshots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWMakeXScreenshots.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KWMakeXScreenshots/Pods-KWMakeXScreenshots.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340D74D6B43F495A39786F63 /* libPods-KWMakeXScreenshots.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E11F39F647F0DEFE4D1A7BA8 /* libPods-KWMakeXScreenshotsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0E97ED0CDDE0A608F43A749 /* libPods-KWMakeXScreenshotsUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +138,8 @@
 				0A4E50102034820B003AA4EB /* KWMakeXScreenshotsTests */,
 				0A4E501B2034820B003AA4EB /* KWMakeXScreenshotsUITests */,
 				0A4E4FF62034820B003AA4EB /* Products */,
+				7A02F31C2AB559F5B0558EFC /* Pods */,
+				0F33C9528F50AE3248182FB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +156,7 @@
 		0A4E4FF72034820B003AA4EB /* KWMakeXScreenshots */ = {
 			isa = PBXGroup;
 			children = (
+				0A4E502A20348262003AA4EB /* Class */,
 				0A4E4FF82034820B003AA4EB /* AppDelegate.h */,
 				0A4E4FF92034820B003AA4EB /* AppDelegate.m */,
 				0A4E4FFB2034820B003AA4EB /* ViewController.h */,
@@ -132,6 +188,149 @@
 			path = KWMakeXScreenshotsUITests;
 			sourceTree = "<group>";
 		};
+		0A4E502A20348262003AA4EB /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E50372034873F003AA4EB /* Main */,
+				0A4E502B20348262003AA4EB /* Home */,
+				0A4E504420348885003AA4EB /* Other */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		0A4E502B20348262003AA4EB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E502C20348262003AA4EB /* Controller */,
+				0A4E502D20348262003AA4EB /* Model */,
+				0A4E502E20348262003AA4EB /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0A4E502C20348262003AA4EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E502F20348284003AA4EB /* KWHomeIPViewController.h */,
+				0A4E503020348284003AA4EB /* KWHomeIPViewController.m */,
+				0A4E503220348558003AA4EB /* KWHomeViewController.h */,
+				0A4E503320348558003AA4EB /* KWHomeViewController.m */,
+				0A4E503420348558003AA4EB /* KWHomeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0A4E502D20348262003AA4EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A4E502E20348262003AA4EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A4E50372034873F003AA4EB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E50382034873F003AA4EB /* Model */,
+				0A4E50392034873F003AA4EB /* View */,
+				0A4E503C2034873F003AA4EB /* Control */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0A4E50382034873F003AA4EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A4E50392034873F003AA4EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A4E503C2034873F003AA4EB /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E506620348A8C003AA4EB /* KWNavigationViewController.h */,
+				0A4E506520348A8C003AA4EB /* KWNavigationViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		0A4E504420348885003AA4EB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E504520348885003AA4EB /* Category */,
+				0A4E505420348885003AA4EB /* EAUitl */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		0A4E504520348885003AA4EB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E504620348885003AA4EB /* Utils.h */,
+				0A4E505020348885003AA4EB /* Utils.m */,
+				0A4E504720348885003AA4EB /* UIBarButtonItem+KWBarButtonItem.h */,
+				0A4E504F20348885003AA4EB /* UIBarButtonItem+KWBarButtonItem.m */,
+				0A4E504820348885003AA4EB /* UIButton+KWMineButton.h */,
+				0A4E504E20348885003AA4EB /* UIButton+KWMineButton.m */,
+				0A4E504920348885003AA4EB /* UIImage+KWExtension.h */,
+				0A4E504D20348885003AA4EB /* UIImage+KWExtension.m */,
+				0A4E504A20348885003AA4EB /* UIView+KWFrame.m */,
+				0A4E504B20348885003AA4EB /* UIImage+KWImage.m */,
+				0A4E505120348885003AA4EB /* UIView+KWFrame.h */,
+				0A4E505220348885003AA4EB /* UIImage+KWImage.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0A4E505420348885003AA4EB /* EAUitl */ = {
+			isa = PBXGroup;
+			children = (
+				0A4E505520348885003AA4EB /* KeychainWrapper.m */,
+				0A4E505620348885003AA4EB /* NSString+KWMD5.h */,
+				0A4E505720348885003AA4EB /* NSData+KWAES.h */,
+				0A4E505820348885003AA4EB /* NSString+KWMD5.m */,
+				0A4E505920348885003AA4EB /* KeychainWrapper.h */,
+				0A4E505A20348885003AA4EB /* NSData+KWAES.m */,
+			);
+			path = EAUitl;
+			sourceTree = "<group>";
+		};
+		0F33C9528F50AE3248182FB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F00023BD55D294AD9CDEFE5 /* libPods-KWMakeXScreenshots.a */,
+				F13A96A734C18E59D772ECB1 /* libPods-KWMakeXScreenshotsTests.a */,
+				D7F964B006092F15FC1BB43C /* libPods-KWMakeXScreenshotsUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A02F31C2AB559F5B0558EFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE2505E596315B563B2AF18F /* Pods-KWMakeXScreenshots.debug.xcconfig */,
+				1041CFE75207C4EDFD7540FD /* Pods-KWMakeXScreenshots.release.xcconfig */,
+				D5AE72D37BFE5D434FA3FB90 /* Pods-KWMakeXScreenshotsTests.debug.xcconfig */,
+				F755AB8C13DD40F17023F4F7 /* Pods-KWMakeXScreenshotsTests.release.xcconfig */,
+				5F2A061E0864EC7CAB9714F4 /* Pods-KWMakeXScreenshotsUITests.debug.xcconfig */,
+				598D5DD2A446F9F8A24298D1 /* Pods-KWMakeXScreenshotsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +338,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A4E50212034820B003AA4EB /* Build configuration list for PBXNativeTarget "KWMakeXScreenshots" */;
 			buildPhases = (
+				BF09F8C3A22FB4798EAF6A37 /* [CP] Check Pods Manifest.lock */,
 				0A4E4FF12034820B003AA4EB /* Sources */,
 				0A4E4FF22034820B003AA4EB /* Frameworks */,
 				0A4E4FF32034820B003AA4EB /* Resources */,
+				D4689E325797AB51D8F0EB66 /* [CP] Embed Pods Frameworks */,
+				511A17CDA545CA24C75BB854 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,9 +358,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A4E50242034820B003AA4EB /* Build configuration list for PBXNativeTarget "KWMakeXScreenshotsTests" */;
 			buildPhases = (
+				840D7DCCC329F6799750D6A5 /* [CP] Check Pods Manifest.lock */,
 				0A4E50092034820B003AA4EB /* Sources */,
 				0A4E500A2034820B003AA4EB /* Frameworks */,
 				0A4E500B2034820B003AA4EB /* Resources */,
+				DFC9CE7A5ABAA553DCAF6FC9 /* [CP] Embed Pods Frameworks */,
+				EAEB6A5BA1936789A62DFDE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +379,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A4E50272034820B003AA4EB /* Build configuration list for PBXNativeTarget "KWMakeXScreenshotsUITests" */;
 			buildPhases = (
+				02E64E7A9FC9B2FA7F7AC0A8 /* [CP] Check Pods Manifest.lock */,
 				0A4E50142034820B003AA4EB /* Sources */,
 				0A4E50152034820B003AA4EB /* Frameworks */,
 				0A4E50162034820B003AA4EB /* Resources */,
+				72B3540E49D0BD54EA5AAFF9 /* [CP] Embed Pods Frameworks */,
+				B0B4EEB42C0A4804ABF350AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,6 +449,7 @@
 				0A4E50052034820B003AA4EB /* LaunchScreen.storyboard in Resources */,
 				0A4E50022034820B003AA4EB /* Assets.xcassets in Resources */,
 				0A4E50002034820B003AA4EB /* Main.storyboard in Resources */,
+				0A4E503620348558003AA4EB /* KWHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +469,176 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02E64E7A9FC9B2FA7F7AC0A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KWMakeXScreenshotsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		511A17CDA545CA24C75BB854 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KWMakeXScreenshots/Pods-KWMakeXScreenshots-resources.sh",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KWMakeXScreenshots/Pods-KWMakeXScreenshots-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72B3540E49D0BD54EA5AAFF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KWMakeXScreenshotsUITests/Pods-KWMakeXScreenshotsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		840D7DCCC329F6799750D6A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KWMakeXScreenshotsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0B4EEB42C0A4804ABF350AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KWMakeXScreenshotsUITests/Pods-KWMakeXScreenshotsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF09F8C3A22FB4798EAF6A37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KWMakeXScreenshots-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4689E325797AB51D8F0EB66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KWMakeXScreenshots/Pods-KWMakeXScreenshots-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFC9CE7A5ABAA553DCAF6FC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KWMakeXScreenshotsTests/Pods-KWMakeXScreenshotsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAEB6A5BA1936789A62DFDE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KWMakeXScreenshotsTests/Pods-KWMakeXScreenshotsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A4E4FF12034820B003AA4EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4E505B20348885003AA4EB /* UIView+KWFrame.m in Sources */,
+				0A4E506320348885003AA4EB /* NSString+KWMD5.m in Sources */,
 				0A4E4FFD2034820B003AA4EB /* ViewController.m in Sources */,
+				0A4E505C20348885003AA4EB /* UIImage+KWImage.m in Sources */,
+				0A4E506020348885003AA4EB /* Utils.m in Sources */,
 				0A4E50082034820B003AA4EB /* main.m in Sources */,
+				0A4E503120348284003AA4EB /* KWHomeIPViewController.m in Sources */,
+				0A4E506420348885003AA4EB /* NSData+KWAES.m in Sources */,
+				0A4E506220348885003AA4EB /* KeychainWrapper.m in Sources */,
+				0A4E506720348A8C003AA4EB /* KWNavigationViewController.m in Sources */,
+				0A4E505F20348885003AA4EB /* UIBarButtonItem+KWBarButtonItem.m in Sources */,
+				0A4E505D20348885003AA4EB /* UIImage+KWExtension.m in Sources */,
 				0A4E4FFA2034820B003AA4EB /* AppDelegate.m in Sources */,
+				0A4E503520348558003AA4EB /* KWHomeViewController.m in Sources */,
+				0A4E505E20348885003AA4EB /* UIButton+KWMineButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +799,7 @@
 		};
 		0A4E50222034820B003AA4EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE2505E596315B563B2AF18F /* Pods-KWMakeXScreenshots.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +814,7 @@
 		};
 		0A4E50232034820B003AA4EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1041CFE75207C4EDFD7540FD /* Pods-KWMakeXScreenshots.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +829,7 @@
 		};
 		0A4E50252034820B003AA4EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5AE72D37BFE5D434FA3FB90 /* Pods-KWMakeXScreenshotsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +845,7 @@
 		};
 		0A4E50262034820B003AA4EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F755AB8C13DD40F17023F4F7 /* Pods-KWMakeXScreenshotsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +861,7 @@
 		};
 		0A4E50282034820B003AA4EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F2A061E0864EC7CAB9714F4 /* Pods-KWMakeXScreenshotsUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69MYRJBQQ9;
@@ -500,6 +876,7 @@
 		};
 		0A4E50292034820B003AA4EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 598D5DD2A446F9F8A24298D1 /* Pods-KWMakeXScreenshotsUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69MYRJBQQ9;

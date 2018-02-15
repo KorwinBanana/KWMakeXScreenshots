@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "KWHomeViewController.h"
+#import "KWNavigationViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    KWHomeViewController *homeVc = [[KWHomeViewController alloc]init];
+    KWNavigationViewController *nv = [[KWNavigationViewController alloc]initWithRootViewController:homeVc];
+    self.window.rootViewController = nv;
+    
+    [self.window makeKeyWindow];
+    
     return YES;
 }
 

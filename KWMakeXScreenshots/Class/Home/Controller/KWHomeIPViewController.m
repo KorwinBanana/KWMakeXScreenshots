@@ -8,7 +8,7 @@
 
 #import "KWHomeIPViewController.h"
 
-@interface KWHomeIPViewController ()
+@interface KWHomeIPViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 @end
 
@@ -16,7 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.navigationItem.title = @"imagePick";
+    
+    //获取照片的类型
+    UIImagePickerControllerSourceType sourcheType = UIImagePickerControllerSourceTypePhotoLibrary;
+    self.sourceType = sourcheType;
+    //设置代理
+    self.delegate = self;
+    //是否允许编辑
+    self.allowsEditing = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,6 +33,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Navigation
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
+    NSLog(@"%@",image);
+}
+
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 

@@ -50,7 +50,7 @@
     //统一设置返回按钮，只有非根控制器
     if(self.childViewControllers.count > 0){//如果大于0，就是非根控制器。第一次meVc加进来是0
         viewController.hidesBottomBarWhenPushed = YES;//隐藏底部tabBar
-        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem backItemWithImage:[UIImage imageNamed:@"navigationButtonReturn"] hightImage:[UIImage imageNamed:@"navigationButtonReturnClick"] target:self action:@selector(back) title:@"返回"];
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem backItemWithImage:[UIImage imageNamed:@"navigationButtonReturnClick"] hightImage:[UIImage imageNamed:@"navigationButtonReturn"] target:self action:@selector(back) title:@"返回"];
     }
     
     //真正在跳转

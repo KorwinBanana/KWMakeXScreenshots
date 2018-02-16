@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A364D3520374E6B008D0B50 /* UIButton+KWButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A364D3420374E6B008D0B50 /* UIButton+KWButton.m */; };
+		0A364D3C20375DBA008D0B50 /* KWSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A364D3B20375DBA008D0B50 /* KWSettingViewController.m */; };
 		0A4E4FFA2034820B003AA4EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E4FF92034820B003AA4EB /* AppDelegate.m */; };
 		0A4E4FFD2034820B003AA4EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E4FFC2034820B003AA4EB /* ViewController.m */; };
 		0A4E50002034820B003AA4EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E4FFE2034820B003AA4EB /* Main.storyboard */; };
@@ -53,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A364D3320374E6B008D0B50 /* UIButton+KWButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+KWButton.h"; sourceTree = "<group>"; };
+		0A364D3420374E6B008D0B50 /* UIButton+KWButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KWButton.m"; sourceTree = "<group>"; };
+		0A364D3A20375DBA008D0B50 /* KWSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWSettingViewController.h; sourceTree = "<group>"; };
+		0A364D3B20375DBA008D0B50 /* KWSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWSettingViewController.m; sourceTree = "<group>"; };
 		0A4E4FF52034820B003AA4EB /* KWMakeXScreenshots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KWMakeXScreenshots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4E4FF82034820B003AA4EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A4E4FF92034820B003AA4EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -137,6 +143,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A364D3620375D4D008D0B50 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0A364D3720375D4D008D0B50 /* Model */,
+				0A364D3820375D4D008D0B50 /* View */,
+				0A364D3920375D4D008D0B50 /* Control */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		0A364D3720375D4D008D0B50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A364D3820375D4D008D0B50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A364D3920375D4D008D0B50 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				0A364D3A20375DBA008D0B50 /* KWSettingViewController.h */,
+				0A364D3B20375DBA008D0B50 /* KWSettingViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
 		0A4E4FEC2034820B003AA4EB = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +238,7 @@
 			children = (
 				0A4E50372034873F003AA4EB /* Main */,
 				0A4E502B20348262003AA4EB /* Home */,
+				0A364D3620375D4D008D0B50 /* Setting */,
 				0A4E504420348885003AA4EB /* Other */,
 			);
 			path = Class;
@@ -293,14 +333,16 @@
 				0A4E504E20348885003AA4EB /* UIButton+KWMineButton.m */,
 				0A4E504920348885003AA4EB /* UIImage+KWExtension.h */,
 				0A4E504D20348885003AA4EB /* UIImage+KWExtension.m */,
-				0A4E504A20348885003AA4EB /* UIView+KWFrame.m */,
-				0A4E504B20348885003AA4EB /* UIImage+KWImage.m */,
 				0A4E505120348885003AA4EB /* UIView+KWFrame.h */,
+				0A4E504A20348885003AA4EB /* UIView+KWFrame.m */,
 				0A4E505220348885003AA4EB /* UIImage+KWImage.h */,
+				0A4E504B20348885003AA4EB /* UIImage+KWImage.m */,
 				0A71CE4C2036B5FA0024C80B /* UIImage+ColorAtPixel.h */,
 				0A71CE4D2036B5FA0024C80B /* UIImage+ColorAtPixel.m */,
 				0A71CE4F2036B7500024C80B /* UIImage+KWGetNewImage.h */,
 				0A71CE502036B7500024C80B /* UIImage+KWGetNewImage.m */,
+				0A364D3320374E6B008D0B50 /* UIButton+KWButton.h */,
+				0A364D3420374E6B008D0B50 /* UIButton+KWButton.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -505,6 +547,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-KWMakeXScreenshots/Pods-KWMakeXScreenshots-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -636,7 +679,9 @@
 			files = (
 				0A4E505B20348885003AA4EB /* UIView+KWFrame.m in Sources */,
 				0A4E506320348885003AA4EB /* NSString+KWMD5.m in Sources */,
+				0A364D3C20375DBA008D0B50 /* KWSettingViewController.m in Sources */,
 				0A4E4FFD2034820B003AA4EB /* ViewController.m in Sources */,
+				0A364D3520374E6B008D0B50 /* UIButton+KWButton.m in Sources */,
 				0A71CE4E2036B5FA0024C80B /* UIImage+ColorAtPixel.m in Sources */,
 				0A4E505C20348885003AA4EB /* UIImage+KWImage.m in Sources */,
 				0A4E506020348885003AA4EB /* Utils.m in Sources */,
@@ -817,6 +862,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69MYRJBQQ9;
 				INFOPLIST_FILE = KWMakeXScreenshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.korwin.cn.KWMakeXScreenshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -832,6 +878,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69MYRJBQQ9;
 				INFOPLIST_FILE = KWMakeXScreenshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.korwin.cn.KWMakeXScreenshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";

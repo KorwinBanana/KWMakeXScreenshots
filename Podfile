@@ -19,4 +19,6 @@ target 'KWMakeXScreenshots' do
 
   pod 'TZImagePickerController'
   pod 'Masonry'
+  pod 'ActionSheetPicker-3.0', '~> 2.3.0'
+  pod 'SVProgressHUD'
 end

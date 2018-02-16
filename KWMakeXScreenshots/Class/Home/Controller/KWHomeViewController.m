@@ -13,6 +13,9 @@
 #import <TZImagePickerController/TZImagePickerController.h>
 #import <Masonry/Masonry.h>
 #import "UIView+KWFrame.h"
+#import "Utils.h"
+#import "UIImage+ColorAtPixel.h"
+#import "UIImage+KWGetNewImage.h"
 
 #define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
@@ -26,15 +29,19 @@
     CGFloat _iXViewW;
 }
 
+@property (nonatomic,strong) UIView *productView;
+
+//结构View
 @property (nonatomic,strong) UIScrollView *iXView;
 @property (nonatomic,strong) UIView *iXFatView;
 @property (nonatomic,strong) UIView *statusView;
 @property (nonatomic,strong) UIView *navigationView;
-@property (nonatomic,strong) UIImageView *screenshots1;
-@property (nonatomic,strong) UIImageView *imageView;
-@property (nonatomic,strong) UIImageView *imageView2;
-@property (nonatomic,strong) UIImageView *screenshots2;
 
+@property (nonatomic,strong) UIImageView *imageView;//截图1
+@property (nonatomic,strong) UIImageView *imageView2;//截图2
+@property (nonatomic,strong) UIImageView *staView;
+@property (nonatomic,strong) UIImageView *tabView;
+@property (nonatomic,strong) UIImageView *tabViewForTab;
 
 @property(nonatomic,strong)UIScrollView *scrollViewSS1;
 @property(nonatomic,strong)UIScrollView *scrollViewSS2;
@@ -45,11 +52,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"MakeXS";
+    self.navigationItem.title = @"MakeXSScreen";
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithString:@"image" target:self action:@selector(imagePickerVc)];
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithString:@"save" target:self action:@selector(savePhoto)];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.productView = [[UIView alloc]init];
+    [self.view addSubview:self.productView];
+    [self.productView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.centerY.mas_equalTo(self.view);
+        make.width.equalTo(@(SCREENWIDTH/2));
+        make.height.equalTo(@250);
+    }];
+    self.productView.backgroundColor = [UIColor blueColor];
+}
+
+//获取截图
+- (void)makeXScreenshotsWithScreen:(UIImage *)screen1 and:(UIImage *)screen2 {
     
     _iXViewW = SCREENWIDTH;
     _iXViewH = _iXViewW * [self getNumberWithChuShu:812 ByChuShu:375];
@@ -79,6 +99,7 @@
     //3 设置代理
     self.iXView.delegate = self;
     
+    //内容View
     self.iXFatView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, _iXViewW, _iXViewH)];
     [self.iXView addSubview:self.iXFatView];
     self.iXFatView.backgroundColor = [UIColor greenColor];
@@ -106,9 +127,20 @@
     //3 设置代理
     self.scrollViewSS1.delegate = self;
     
+    //截图1
     _imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, _iXViewW, _scrollViewSS1.bounds.size.height)];
-    _imageView.image = [UIImage imageNamed:@"8PlusS"];
+#warning 截图1
+    _imageView.image = screen1;
     [self.scrollViewSS1 addSubview:_imageView];
+    UIColor *staColor = [_imageView.image colorAtPixel:CGPointMake(1, 1)];//获取颜色
+    //    NSLog(@"staColor = %@",staColor);
+    
+    //截取tab位置图片
+#warning 计算图片位置
+    UIImage *tabNewImage = [UIImage imageFromImage:_imageView.image inRect:CGRectMake(0, _imageView.image.size.height - [self getNumberWithChuShu:49 ByChuShu:736] * _imageView.image.size.height, _imageView.image.size.width, [self getNumberWithChuShu:49 ByChuShu:736] * _imageView.image.size.height)];
+    UIImage *tabNewImage2 = [UIImage imageFromImage:tabNewImage inRect:CGRectMake(0, 5, tabNewImage.size.width, tabNewImage.size.height - 5)];
+    NSLog(@"_imageView.image.size.height = %lf",_imageView.image.size.height);
+    UIColor *tabNewColor = [tabNewImage2 colorAtPixel:CGPointMake(tabNewImage2.size.width/2, 2)];//获取颜色
     
     /************/
     //scrollViewSS2
@@ -137,22 +169,49 @@
     //3 设置代理
     self.scrollViewSS2.delegate = self;
     
+    //截图2
     _imageView2 = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, _iXViewW, _scrollViewSS1.bounds.size.height)];
-    _imageView2.image = [UIImage imageNamed:@"8PlusS"];
+#warning 截图2
+    _imageView2.image = screen2;
     [self.scrollViewSS2 addSubview:_imageView2];
     
     /************/
     //statusView
     self.statusView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, _iXViewW, _iXViewH*[self getNumberWithChuShu:48.543479 ByChuShu:812])];
     [self.iXFatView addSubview:self.statusView];
-    self.statusView.backgroundColor = [UIColor blueColor];
+    self.statusView.backgroundColor = staColor;//设置颜色
+    
+    //staB 36c6c1
+    UIImage *staImage = [UIImage imageNamed:@"staW"];
+    CGFloat staImageH = [self getNumberWithChuShu:staImage.size.height ByChuShu:staImage.size.width] * _iXViewH;
+    NSLog(@"staImageH = %lf",staImage.size.width);
+    self.staView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, _iXViewW, staImageH/2.15)];
+    self.staView.image = staImage;
+    self.staView.backgroundColor = [UIColor clearColor];
+    [self.statusView addSubview:_staView];
     
     /************/
     //navigationView
     CGFloat navViewY = _iXViewH - _iXViewH*[self getNumberWithChuShu:83 ByChuShu:812];
     self.navigationView = [[UIView alloc]initWithFrame:CGRectMake(0, navViewY, _iXViewW, _iXViewH*[self getNumberWithChuShu:83 ByChuShu:812])];
     [self.iXFatView addSubview:self.navigationView];
-    self.navigationView.backgroundColor = [UIColor redColor];
+    self.navigationView.backgroundColor = tabNewColor;
+    
+    UIImage *tabImage = [UIImage imageNamed:@"tabUnderb"];
+    CGFloat tabImageH = [self getNumberWithChuShu:staImage.size.height ByChuShu:staImage.size.width] * _iXViewH;
+    CGFloat tabImageTop = _iXViewH*[self getNumberWithChuShu:83 ByChuShu:812] - tabImageH;
+    NSLog(@"tabImageH = %lf",staImage.size.width);
+    
+    //tabViewForTab
+    self.tabViewForTab = [[UIImageView alloc]initWithFrame:CGRectMake(0, tabImageTop, _iXViewW, 49)];
+    self.tabViewForTab.image = tabNewImage2;
+    [self.navigationView addSubview:_tabViewForTab];
+    
+    //tabW
+    self.tabView = [[UIImageView alloc]initWithFrame:CGRectMake(0, tabImageH, _iXViewW, tabImageH/3.8)];
+    self.tabView.image = tabImage;
+    self.tabView.backgroundColor = [UIColor clearColor];
+    [self.navigationView addSubview:_tabView];
 }
 
 - (void)imagePickerVc {
@@ -171,6 +230,7 @@
         _selectedAssets = [NSMutableArray arrayWithArray:assets];
         _selectedPhotos = [NSMutableArray arrayWithArray:photos];
         //刷新图片展示
+        [self makeXScreenshotsWithScreen:_selectedPhotos[0] and:_selectedPhotos[1]];
     }];
     [self presentViewController:imagePickerVc animated:YES completion:nil];
 }

@@ -28,6 +28,8 @@
 		0A4E506320348885003AA4EB /* NSString+KWMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E505820348885003AA4EB /* NSString+KWMD5.m */; };
 		0A4E506420348885003AA4EB /* NSData+KWAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E505A20348885003AA4EB /* NSData+KWAES.m */; };
 		0A4E506720348A8C003AA4EB /* KWNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E506520348A8C003AA4EB /* KWNavigationViewController.m */; };
+		0A71CE4E2036B5FA0024C80B /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A71CE4D2036B5FA0024C80B /* UIImage+ColorAtPixel.m */; };
+		0A71CE512036B7500024C80B /* UIImage+KWGetNewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A71CE502036B7500024C80B /* UIImage+KWGetNewImage.m */; };
 		340D74D6B43F495A39786F63 /* libPods-KWMakeXScreenshots.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F00023BD55D294AD9CDEFE5 /* libPods-KWMakeXScreenshots.a */; };
 		B0E97ED0CDDE0A608F43A749 /* libPods-KWMakeXScreenshotsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7F964B006092F15FC1BB43C /* libPods-KWMakeXScreenshotsUITests.a */; };
 		E11F39F647F0DEFE4D1A7BA8 /* libPods-KWMakeXScreenshotsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F13A96A734C18E59D772ECB1 /* libPods-KWMakeXScreenshotsTests.a */; };
@@ -92,6 +94,10 @@
 		0A4E505A20348885003AA4EB /* NSData+KWAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+KWAES.m"; sourceTree = "<group>"; };
 		0A4E506520348A8C003AA4EB /* KWNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWNavigationViewController.m; sourceTree = "<group>"; };
 		0A4E506620348A8C003AA4EB /* KWNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWNavigationViewController.h; sourceTree = "<group>"; };
+		0A71CE4C2036B5FA0024C80B /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		0A71CE4D2036B5FA0024C80B /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
+		0A71CE4F2036B7500024C80B /* UIImage+KWGetNewImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+KWGetNewImage.h"; sourceTree = "<group>"; };
+		0A71CE502036B7500024C80B /* UIImage+KWGetNewImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KWGetNewImage.m"; sourceTree = "<group>"; };
 		1041CFE75207C4EDFD7540FD /* Pods-KWMakeXScreenshots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWMakeXScreenshots.release.xcconfig"; path = "Pods/Target Support Files/Pods-KWMakeXScreenshots/Pods-KWMakeXScreenshots.release.xcconfig"; sourceTree = "<group>"; };
 		3F00023BD55D294AD9CDEFE5 /* libPods-KWMakeXScreenshots.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KWMakeXScreenshots.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		598D5DD2A446F9F8A24298D1 /* Pods-KWMakeXScreenshotsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KWMakeXScreenshotsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KWMakeXScreenshotsUITests/Pods-KWMakeXScreenshotsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -291,6 +297,10 @@
 				0A4E504B20348885003AA4EB /* UIImage+KWImage.m */,
 				0A4E505120348885003AA4EB /* UIView+KWFrame.h */,
 				0A4E505220348885003AA4EB /* UIImage+KWImage.h */,
+				0A71CE4C2036B5FA0024C80B /* UIImage+ColorAtPixel.h */,
+				0A71CE4D2036B5FA0024C80B /* UIImage+ColorAtPixel.m */,
+				0A71CE4F2036B7500024C80B /* UIImage+KWGetNewImage.h */,
+				0A71CE502036B7500024C80B /* UIImage+KWGetNewImage.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -627,6 +637,7 @@
 				0A4E505B20348885003AA4EB /* UIView+KWFrame.m in Sources */,
 				0A4E506320348885003AA4EB /* NSString+KWMD5.m in Sources */,
 				0A4E4FFD2034820B003AA4EB /* ViewController.m in Sources */,
+				0A71CE4E2036B5FA0024C80B /* UIImage+ColorAtPixel.m in Sources */,
 				0A4E505C20348885003AA4EB /* UIImage+KWImage.m in Sources */,
 				0A4E506020348885003AA4EB /* Utils.m in Sources */,
 				0A4E50082034820B003AA4EB /* main.m in Sources */,
@@ -635,6 +646,7 @@
 				0A4E506220348885003AA4EB /* KeychainWrapper.m in Sources */,
 				0A4E506720348A8C003AA4EB /* KWNavigationViewController.m in Sources */,
 				0A4E505F20348885003AA4EB /* UIBarButtonItem+KWBarButtonItem.m in Sources */,
+				0A71CE512036B7500024C80B /* UIImage+KWGetNewImage.m in Sources */,
 				0A4E505D20348885003AA4EB /* UIImage+KWExtension.m in Sources */,
 				0A4E4FFA2034820B003AA4EB /* AppDelegate.m in Sources */,
 				0A4E503520348558003AA4EB /* KWHomeViewController.m in Sources */,

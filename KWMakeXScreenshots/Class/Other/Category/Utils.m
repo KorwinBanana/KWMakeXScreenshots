@@ -8,6 +8,7 @@
 
 #import "Utils.h"
 #import "KeychainWrapper.h"
+#import <sys/utsname.h>
 
 @implementation Utils
 /**
@@ -555,6 +556,30 @@
         return YES;
     }
     return NO;
+}
+
+// 需要#import <sys/utsname.h>
++ (NSString* )deviceModelName {
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString *deviceModel = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    
+    if ([deviceModel isEqualToString:@"iPhone5,1"]
+        ||[deviceModel isEqualToString:@"iPhone5,2"]
+        ||[deviceModel isEqualToString:@"iPhone5,3"]
+        ||[deviceModel isEqualToString:@"iPhone5,4"]
+        ||[deviceModel isEqualToString:@"iPhone6,1"]
+        ||[deviceModel isEqualToString:@"iPhone6,2"]
+        ||[deviceModel isEqualToString:@"iPhone8,4"]
+        ||[deviceModel isEqualToString:@"iPod4,1"]
+        ||[deviceModel isEqualToString:@"iPod5,1"])    return @"iPhone SE";
+    
+    else if([deviceModel isEqualToString:@"iPhone10,3"]
+       ||[deviceModel isEqualToString:@"iPhone10,6"]) return @"iPhone X";
+
+    else return @"iPhone 8";
+
+    return deviceModel;
 }
 @end
 

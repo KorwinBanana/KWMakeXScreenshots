@@ -124,5 +124,6 @@
 + (NSArray *)matchString:(NSString *)string toRegexString:(NSString *)regexStr;
 
 + (BOOL)getIsIpad;//判断ipad
++ (NSString* )deviceModelName;//判断手机尺寸
 @end
 

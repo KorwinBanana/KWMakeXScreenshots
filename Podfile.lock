@@ -1,21 +1,63 @@
 PODS:
   - ActionSheetPicker-3.0 (2.3.0)
+  - Firebase/AdMob (4.9.0):
+    - Firebase/Core
+    - Google-Mobile-Ads-SDK (= 7.28.0)
+  - Firebase/Core (4.9.0):
+    - FirebaseAnalytics (= 4.0.9)
+    - FirebaseCore (= 4.0.15)
+  - FirebaseAnalytics (4.0.9):
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - nanopb (~> 0.3)
+  - FirebaseCore (4.0.15):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (2.0.9):
+    - FirebaseCore (~> 4.0)
+  - Google-Mobile-Ads-SDK (7.28.0)
+  - GoogleToolboxForMac/Defines (2.1.3)
+  - GoogleToolboxForMac/NSData+zlib (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
   - Masonry (1.1.0)
-  - SVProgressHUD (2.2.2)
-  - TZImagePickerController (1.9.6)
+  - MLEmojiLabel (1.0.2):
+    - TTTAttributedLabel (~> 1.13.4)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - SVProgressHUD (2.2.5)
+  - TTTAttributedLabel (1.13.4)
+  - TYAttributedLabel (2.6.6)
+  - TZImagePickerController (2.0.0.6)
 
 DEPENDENCIES:
   - ActionSheetPicker-3.0 (~> 2.3.0)
+  - Firebase/AdMob
+  - Google-Mobile-Ads-SDK
   - Masonry
+  - MLEmojiLabel (~> 1.0.2)
   - SVProgressHUD
+  - TYAttributedLabel (~> 2.6.2)
   - TZImagePickerController
 
 SPEC CHECKSUMS:
   ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  Firebase: 632216af3ed7f31e3be34776947fdc7546cfb572
+  FirebaseAnalytics: 388b630c15713f5dbf364071f5f3d6077fb52f4e
+  FirebaseCore: 3bd047463058fa6b5d312c97502c52e45401cdfb
+  FirebaseInstanceID: d2058a35e9bebda1b6dd42486b84917bde552a9d
+  Google-Mobile-Ads-SDK: 7f9bc0011df363ae5616449de3682a14c4701612
+  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
-  TZImagePickerController: 276dc7c0cc70da9ee354046474b405d87ef81c89
+  MLEmojiLabel: 36d73c19f9975cbf9def24e5bc135263b0337fd8
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
+  TYAttributedLabel: cb8fc910d97eb5224936d4f692a78e042af691b2
+  TZImagePickerController: 028d1670cd46b2d35769503dd36a6b2d21eee563
 
-PODFILE CHECKSUM: 3241fa34c0198a6c8d98f551e67b427fb9d11a43
+PODFILE CHECKSUM: b3ad33e25df6fd97c988e11e0094f3594109c3ff
 
 COCOAPODS: 1.3.1

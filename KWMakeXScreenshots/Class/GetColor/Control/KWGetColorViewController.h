@@ -10,4 +10,7 @@
 
 @interface KWGetColorViewController : UIViewController
 
+@property(nonatomic,strong) UIImage *iXImage;
+@property(nonatomic,strong) UIColor *theColor;
+
 @end

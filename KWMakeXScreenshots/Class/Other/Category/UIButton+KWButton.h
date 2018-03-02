@@ -11,5 +11,5 @@
 @interface UIButton (KWButton)
 
 + (UIButton *) buttonWithImage:(UIImage *)image hightImage:(UIImage *)hightImage target:( id)target action:(SEL)action;
-
++ (UIButton *) buttonWithImage:(UIImage *)image selectImage:(UIImage *)selectImage target:( id)target action:(SEL)action;
 @end

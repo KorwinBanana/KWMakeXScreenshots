@@ -10,4 +10,7 @@
 
 @interface KWHomeViewController : UIViewController
 
+@property (nonatomic,strong) UIColor *iXNavColor;
+@property (nonatomic,strong) UIColor *iXTabColor;
+
 @end

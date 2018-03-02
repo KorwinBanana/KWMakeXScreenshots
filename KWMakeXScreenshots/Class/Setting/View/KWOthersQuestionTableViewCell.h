@@ -10,4 +10,8 @@
 
 @interface KWOthersQuestionTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *titlLabel;
+@property (weak, nonatomic) IBOutlet UILabel *answerLabel;
+
+
 @end

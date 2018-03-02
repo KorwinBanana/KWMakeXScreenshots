@@ -9,6 +9,7 @@
 #import "Utils.h"
 #import "KeychainWrapper.h"
 #import <sys/utsname.h>
+#import <Photos/Photos.h>
 
 @implementation Utils
 /**
@@ -572,14 +573,75 @@
         ||[deviceModel isEqualToString:@"iPhone6,2"]
         ||[deviceModel isEqualToString:@"iPhone8,4"]
         ||[deviceModel isEqualToString:@"iPod4,1"]
-        ||[deviceModel isEqualToString:@"iPod5,1"])    return @"iPhone SE";
+        ||[deviceModel isEqualToString:@"iPod5,1"])   {
+        NSLog(@"deviceModel = %@",deviceModel);
+        return @"iPhone SE";
+    }
     
     else if([deviceModel isEqualToString:@"iPhone10,3"]
-       ||[deviceModel isEqualToString:@"iPhone10,6"]) return @"iPhone X";
+            ||[deviceModel isEqualToString:@"iPhone10,6"])  {
+        NSLog(@"deviceModel = %@",deviceModel);
+        return @"iPhone X";
+    }
 
-    else return @"iPhone 8";
+    else if([deviceModel isEqualToString:@"iPhone7,2"]
+            ||[deviceModel isEqualToString:@"iPhone8,1"]
+            ||[deviceModel isEqualToString:@"iPhone9,1"]
+            ||[deviceModel isEqualToString:@"iPhone9,3"]
+            ||[deviceModel isEqualToString:@"iPhone10,1"]
+            ||[deviceModel isEqualToString:@"iPhone10,4"])  {
+        NSLog(@"deviceModel = %@",deviceModel);
+        return @"iPhone 8";
+    }
+    
+    else {
+        NSLog(@"deviceModel = %@",deviceModel);
+        return @"iPhone 8Plus";
+        
+    }
 
     return deviceModel;
 }
+
+/*
+ 检测相册是否授权
+ */
++ (BOOL)checkVideoPhotoAuthorization {
+    __block BOOL isAvalible = NO;
+    __weak __typeof__(self) weakSelf = self;
+    //iOS8.0之后
+    PHAuthorizationStatus photoStatus =  [PHPhotoLibrary authorizationStatus];
+    switch (photoStatus) {
+        case PHAuthorizationStatusAuthorized:
+            isAvalible = YES;
+            break;
+        case PHAuthorizationStatusDenied:
+        {
+            //            [self showWithMessage:@"此功能需要您授权本App打开相册\n设置方法:打开手机设置->隐私->相册"];
+            isAvalible = NO;
+        }
+            break;
+        case PHAuthorizationStatusNotDetermined:
+        {
+            [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+                if (status == PHAuthorizationStatusAuthorized) {
+                    isAvalible = YES;
+                }else{
+                    isAvalible = NO;  //回到主线程
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        //                        [weakSelf gotoSetting];
+                    });
+                }
+            }];
+        }
+            break;
+        case PHAuthorizationStatusRestricted:
+            isAvalible = NO;
+            break;
+        default:
+            break;
+    }
+    return isAvalible;
+};
 @end
 

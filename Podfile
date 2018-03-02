@@ -21,4 +21,8 @@ target 'KWMakeXScreenshots' do
   pod 'Masonry'
   pod 'ActionSheetPicker-3.0', '~> 2.3.0'
   pod 'SVProgressHUD'
+  pod 'Firebase/AdMob'
+  pod 'Google-Mobile-Ads-SDK'
+  pod 'TYAttributedLabel', '~> 2.6.2'
+  pod 'MLEmojiLabel', '~> 1.0.2'
 end

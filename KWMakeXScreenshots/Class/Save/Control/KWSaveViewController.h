@@ -10,4 +10,6 @@
 
 @interface KWSaveViewController : UIViewController
 
+@property(nonatomic,strong) UIImage *iXImage;
+
 @end

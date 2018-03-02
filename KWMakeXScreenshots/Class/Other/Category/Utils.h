@@ -125,5 +125,7 @@
 
 + (BOOL)getIsIpad;//判断ipad
 + (NSString* )deviceModelName;//判断手机尺寸
+
++ (BOOL)checkVideoPhotoAuthorization;
 @end
 

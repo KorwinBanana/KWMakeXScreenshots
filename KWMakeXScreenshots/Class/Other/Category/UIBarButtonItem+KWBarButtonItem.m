@@ -21,8 +21,11 @@
     [btn sizeToFit];
     
     //把Button先包装成UIView，在把UIView包装成UIButtonItem
-    UIView *containView = [[UIView alloc]initWithFrame:btn.bounds];
+    UIView *containView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
     [containView addSubview:btn];
+    [btn setCenter:CGPointMake(containView.KW_centerX, containView.KW_centerY)];
+    [btn setFrame:CGRectMake(0, 0, 40, 40)];
+//    containView.backgroundColor = [UIColor redColor];
     
     //把UIButton包装成UIButtonItem.就会导致按钮点击区域扩大，
     return [[UIBarButtonItem alloc]initWithCustomView:containView];
@@ -62,7 +65,7 @@
     [btn sizeToFit];
     
     //把Button先包装成UIView，在把UIView包装成UIButtonItem
-    UIView *containView = [[UIView alloc]initWithFrame:btn.bounds];
+    UIView *containView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 35, 35)];
     [containView addSubview:btn];
     
     //把UIButton包装成UIButtonItem.就会导致按钮点击区域扩大，
@@ -79,7 +82,12 @@
     [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];//返回的选中title的颜色
     [backButton addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     [backButton sizeToFit];
-    backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
-    return [[UIBarButtonItem alloc]initWithCustomView:backButton];
+    backButton.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
+    
+    //把Button先包装成UIView，在把UIView包装成UIButtonItem
+    UIView *containView = [[UIView alloc]initWithFrame:backButton.bounds];
+//    containView.backgroundColor = [UIColor redColor];
+    [containView addSubview:backButton];
+    return [[UIBarButtonItem alloc]initWithCustomView:containView];
 }
 @end

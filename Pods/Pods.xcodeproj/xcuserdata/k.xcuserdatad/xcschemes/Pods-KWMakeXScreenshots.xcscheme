@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'EEDEDC0E7FAEE08934C43A65151CCE90'
+               BlueprintIdentifier = '48DF5A39802C470778F1C36E64678D69'
                BlueprintName = 'Pods-KWMakeXScreenshots'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-KWMakeXScreenshots.a'>

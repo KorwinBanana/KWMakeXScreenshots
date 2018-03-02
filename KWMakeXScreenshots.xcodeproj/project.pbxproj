@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A08913F2044631700E1B402 /* KWHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A08913E2044631700E1B402 /* KWHelpViewController.m */; };
+		0A089142204464AB00E1B402 /* KWQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A089141204464AB00E1B402 /* KWQuestionsViewController.m */; };
+		0A08914620446D4300E1B402 /* KWQuestionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A08914420446D4300E1B402 /* KWQuestionViewCell.m */; };
+		0A08914720446D4300E1B402 /* KWQuestionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A08914520446D4300E1B402 /* KWQuestionViewCell.xib */; };
+		0A08914B20447CB000E1B402 /* KWOthersQuestionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A08914920447CB000E1B402 /* KWOthersQuestionTableViewCell.m */; };
+		0A08914C20447CB000E1B402 /* KWOthersQuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A08914A20447CB000E1B402 /* KWOthersQuestionTableViewCell.xib */; };
+		0A0891582044C7D600E1B402 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A0891572044C7D500E1B402 /* GoogleService-Info.plist */; };
+		0A0FA5F82045D89200C2A862 /* KWGetColorTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0FA5F72045D89200C2A862 /* KWGetColorTabViewController.m */; };
+		0A101FF2203D364D00C6837F /* KWSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A101FF0203D364D00C6837F /* KWSettingViewController.m */; };
+		0A10200E203D369700C6837F /* KWSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A10200C203D369700C6837F /* KWSaveViewController.m */; };
+		0A10200F203D369700C6837F /* KWSaveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A10200D203D369700C6837F /* KWSaveViewController.xib */; };
+		0A102012203D37D800C6837F /* KWVisitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A102011203D37D800C6837F /* KWVisitViewController.m */; };
+		0A1AE670203DD3180036884E /* KWGetColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1AE66F203DD3180036884E /* KWGetColorViewController.m */; };
 		0A364D3520374E6B008D0B50 /* UIButton+KWButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A364D3420374E6B008D0B50 /* UIButton+KWButton.m */; };
-		0A364D3C20375DBA008D0B50 /* KWSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A364D3B20375DBA008D0B50 /* KWSettingViewController.m */; };
 		0A4E4FFA2034820B003AA4EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E4FF92034820B003AA4EB /* AppDelegate.m */; };
 		0A4E4FFD2034820B003AA4EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E4FFC2034820B003AA4EB /* ViewController.m */; };
 		0A4E50002034820B003AA4EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E4FFE2034820B003AA4EB /* Main.storyboard */; };
 		0A4E50022034820B003AA4EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E50012034820B003AA4EB /* Assets.xcassets */; };
-		0A4E50052034820B003AA4EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A4E50032034820B003AA4EB /* LaunchScreen.storyboard */; };
 		0A4E50082034820B003AA4EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E50072034820B003AA4EB /* main.m */; };
 		0A4E50122034820B003AA4EB /* KWMakeXScreenshotsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E50112034820B003AA4EB /* KWMakeXScreenshotsTests.m */; };
 		0A4E501D2034820B003AA4EB /* KWMakeXScreenshotsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E501C2034820B003AA4EB /* KWMakeXScreenshotsUITests.m */; };
@@ -27,8 +38,6 @@
 		0A4E505F20348885003AA4EB /* UIBarButtonItem+KWBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E504F20348885003AA4EB /* UIBarButtonItem+KWBarButtonItem.m */; };
 		0A4E506020348885003AA4EB /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E505020348885003AA4EB /* Utils.m */; };
 		0A4E506220348885003AA4EB /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E505520348885003AA4EB /* KeychainWrapper.m */; };
-		0A4E506320348885003AA4EB /* NSString+KWMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E505820348885003AA4EB /* NSString+KWMD5.m */; };
-		0A4E506420348885003AA4EB /* NSData+KWAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E505A20348885003AA4EB /* NSData+KWAES.m */; };
 		0A4E506720348A8C003AA4EB /* KWNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E506520348A8C003AA4EB /* KWNavigationViewController.m */; };
 		0A71CE4E2036B5FA0024C80B /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A71CE4D2036B5FA0024C80B /* UIImage+ColorAtPixel.m */; };
 		0A71CE512036B7500024C80B /* UIImage+KWGetNewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A71CE502036B7500024C80B /* UIImage+KWGetNewImage.m */; };
@@ -55,10 +64,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A08913D2044631700E1B402 /* KWHelpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWHelpViewController.h; sourceTree = "<group>"; };
+		0A08913E2044631700E1B402 /* KWHelpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWHelpViewController.m; sourceTree = "<group>"; };
+		0A089140204464AB00E1B402 /* KWQuestionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWQuestionsViewController.h; sourceTree = "<group>"; };
+		0A089141204464AB00E1B402 /* KWQuestionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWQuestionsViewController.m; sourceTree = "<group>"; };
+		0A08914320446D4300E1B402 /* KWQuestionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWQuestionViewCell.h; sourceTree = "<group>"; };
+		0A08914420446D4300E1B402 /* KWQuestionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWQuestionViewCell.m; sourceTree = "<group>"; };
+		0A08914520446D4300E1B402 /* KWQuestionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KWQuestionViewCell.xib; sourceTree = "<group>"; };
+		0A08914820447CB000E1B402 /* KWOthersQuestionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWOthersQuestionTableViewCell.h; sourceTree = "<group>"; };
+		0A08914920447CB000E1B402 /* KWOthersQuestionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWOthersQuestionTableViewCell.m; sourceTree = "<group>"; };
+		0A08914A20447CB000E1B402 /* KWOthersQuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KWOthersQuestionTableViewCell.xib; sourceTree = "<group>"; };
+		0A0891522044AAF800E1B402 /* KWMakeXScreenshots.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWMakeXScreenshots.pch; sourceTree = "<group>"; };
+		0A0891572044C7D500E1B402 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A0FA5F62045D89200C2A862 /* KWGetColorTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWGetColorTabViewController.h; sourceTree = "<group>"; };
+		0A0FA5F72045D89200C2A862 /* KWGetColorTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWGetColorTabViewController.m; sourceTree = "<group>"; };
+		0A101FF0203D364D00C6837F /* KWSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWSettingViewController.m; sourceTree = "<group>"; };
+		0A101FF1203D364D00C6837F /* KWSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSettingViewController.h; sourceTree = "<group>"; };
+		0A10200B203D369700C6837F /* KWSaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWSaveViewController.h; sourceTree = "<group>"; };
+		0A10200C203D369700C6837F /* KWSaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWSaveViewController.m; sourceTree = "<group>"; };
+		0A10200D203D369700C6837F /* KWSaveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KWSaveViewController.xib; sourceTree = "<group>"; };
+		0A102010203D37D800C6837F /* KWVisitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWVisitViewController.h; sourceTree = "<group>"; };
+		0A102011203D37D800C6837F /* KWVisitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWVisitViewController.m; sourceTree = "<group>"; };
+		0A1AE66E203DD3180036884E /* KWGetColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWGetColorViewController.h; sourceTree = "<group>"; };
+		0A1AE66F203DD3180036884E /* KWGetColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWGetColorViewController.m; sourceTree = "<group>"; };
 		0A364D3320374E6B008D0B50 /* UIButton+KWButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+KWButton.h"; sourceTree = "<group>"; };
 		0A364D3420374E6B008D0B50 /* UIButton+KWButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KWButton.m"; sourceTree = "<group>"; };
-		0A364D3A20375DBA008D0B50 /* KWSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWSettingViewController.h; sourceTree = "<group>"; };
-		0A364D3B20375DBA008D0B50 /* KWSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWSettingViewController.m; sourceTree = "<group>"; };
 		0A4E4FF52034820B003AA4EB /* KWMakeXScreenshots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KWMakeXScreenshots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4E4FF82034820B003AA4EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A4E4FF92034820B003AA4EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,7 +96,6 @@
 		0A4E4FFC2034820B003AA4EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0A4E4FFF2034820B003AA4EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A4E50012034820B003AA4EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0A4E50042034820B003AA4EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A4E50062034820B003AA4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A4E50072034820B003AA4EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A4E500D2034820B003AA4EB /* KWMakeXScreenshotsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KWMakeXScreenshotsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,11 +122,7 @@
 		0A4E505120348885003AA4EB /* UIView+KWFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KWFrame.h"; sourceTree = "<group>"; };
 		0A4E505220348885003AA4EB /* UIImage+KWImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KWImage.h"; sourceTree = "<group>"; };
 		0A4E505520348885003AA4EB /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
-		0A4E505620348885003AA4EB /* NSString+KWMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KWMD5.h"; sourceTree = "<group>"; };
-		0A4E505720348885003AA4EB /* NSData+KWAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+KWAES.h"; sourceTree = "<group>"; };
-		0A4E505820348885003AA4EB /* NSString+KWMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KWMD5.m"; sourceTree = "<group>"; };
 		0A4E505920348885003AA4EB /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
-		0A4E505A20348885003AA4EB /* NSData+KWAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+KWAES.m"; sourceTree = "<group>"; };
 		0A4E506520348A8C003AA4EB /* KWNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWNavigationViewController.m; sourceTree = "<group>"; };
 		0A4E506620348A8C003AA4EB /* KWNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWNavigationViewController.h; sourceTree = "<group>"; };
 		0A71CE4C2036B5FA0024C80B /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
@@ -143,35 +168,124 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A364D3620375D4D008D0B50 /* Setting */ = {
+		0A0891512044AAF800E1B402 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				0A364D3720375D4D008D0B50 /* Model */,
-				0A364D3820375D4D008D0B50 /* View */,
-				0A364D3920375D4D008D0B50 /* Control */,
+				0A0891522044AAF800E1B402 /* KWMakeXScreenshots.pch */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		0A101FEC203D364D00C6837F /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0A101FED203D364D00C6837F /* Model */,
+				0A101FEE203D364D00C6837F /* View */,
+				0A101FEF203D364D00C6837F /* Control */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
 		};
-		0A364D3720375D4D008D0B50 /* Model */ = {
+		0A101FED203D364D00C6837F /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0A364D3820375D4D008D0B50 /* View */ = {
+		0A101FEE203D364D00C6837F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A08914320446D4300E1B402 /* KWQuestionViewCell.h */,
+				0A08914420446D4300E1B402 /* KWQuestionViewCell.m */,
+				0A08914520446D4300E1B402 /* KWQuestionViewCell.xib */,
+				0A08914820447CB000E1B402 /* KWOthersQuestionTableViewCell.h */,
+				0A08914920447CB000E1B402 /* KWOthersQuestionTableViewCell.m */,
+				0A08914A20447CB000E1B402 /* KWOthersQuestionTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A101FEF203D364D00C6837F /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				0A101FF1203D364D00C6837F /* KWSettingViewController.h */,
+				0A101FF0203D364D00C6837F /* KWSettingViewController.m */,
+				0A08913D2044631700E1B402 /* KWHelpViewController.h */,
+				0A08913E2044631700E1B402 /* KWHelpViewController.m */,
+				0A089140204464AB00E1B402 /* KWQuestionsViewController.h */,
+				0A089141204464AB00E1B402 /* KWQuestionsViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		0A101FF3203D365F00C6837F /* Save */ = {
+			isa = PBXGroup;
+			children = (
+				0A101FF4203D365F00C6837F /* Model */,
+				0A101FF5203D365F00C6837F /* View */,
+				0A101FF6203D365F00C6837F /* Control */,
+			);
+			path = Save;
+			sourceTree = "<group>";
+		};
+		0A101FF4203D365F00C6837F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A101FF5203D365F00C6837F /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		0A364D3920375D4D008D0B50 /* Control */ = {
+		0A101FF6203D365F00C6837F /* Control */ = {
 			isa = PBXGroup;
 			children = (
-				0A364D3A20375DBA008D0B50 /* KWSettingViewController.h */,
-				0A364D3B20375DBA008D0B50 /* KWSettingViewController.m */,
+				0A10200B203D369700C6837F /* KWSaveViewController.h */,
+				0A10200C203D369700C6837F /* KWSaveViewController.m */,
+				0A10200D203D369700C6837F /* KWSaveViewController.xib */,
+				0A102010203D37D800C6837F /* KWVisitViewController.h */,
+				0A102011203D37D800C6837F /* KWVisitViewController.m */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		0A101FFF203D367300C6837F /* GetColor */ = {
+			isa = PBXGroup;
+			children = (
+				0A102000203D367300C6837F /* Model */,
+				0A102001203D367300C6837F /* View */,
+				0A102002203D367300C6837F /* Control */,
+			);
+			path = GetColor;
+			sourceTree = "<group>";
+		};
+		0A102000203D367300C6837F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A102001203D367300C6837F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A102002203D367300C6837F /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				0A1AE66E203DD3180036884E /* KWGetColorViewController.h */,
+				0A1AE66F203DD3180036884E /* KWGetColorViewController.m */,
+				0A0FA5F62045D89200C2A862 /* KWGetColorTabViewController.h */,
+				0A0FA5F72045D89200C2A862 /* KWGetColorTabViewController.m */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -201,6 +315,7 @@
 		0A4E4FF72034820B003AA4EB /* KWMakeXScreenshots */ = {
 			isa = PBXGroup;
 			children = (
+				0A0891572044C7D500E1B402 /* GoogleService-Info.plist */,
 				0A4E502A20348262003AA4EB /* Class */,
 				0A4E4FF82034820B003AA4EB /* AppDelegate.h */,
 				0A4E4FF92034820B003AA4EB /* AppDelegate.m */,
@@ -208,7 +323,6 @@
 				0A4E4FFC2034820B003AA4EB /* ViewController.m */,
 				0A4E4FFE2034820B003AA4EB /* Main.storyboard */,
 				0A4E50012034820B003AA4EB /* Assets.xcassets */,
-				0A4E50032034820B003AA4EB /* LaunchScreen.storyboard */,
 				0A4E50062034820B003AA4EB /* Info.plist */,
 				0A4E50072034820B003AA4EB /* main.m */,
 			);
@@ -238,7 +352,9 @@
 			children = (
 				0A4E50372034873F003AA4EB /* Main */,
 				0A4E502B20348262003AA4EB /* Home */,
-				0A364D3620375D4D008D0B50 /* Setting */,
+				0A101FF3203D365F00C6837F /* Save */,
+				0A101FFF203D367300C6837F /* GetColor */,
+				0A101FEC203D364D00C6837F /* Setting */,
 				0A4E504420348885003AA4EB /* Other */,
 			);
 			path = Class;
@@ -283,6 +399,7 @@
 		0A4E50372034873F003AA4EB /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				0A0891512044AAF800E1B402 /* Config */,
 				0A4E50382034873F003AA4EB /* Model */,
 				0A4E50392034873F003AA4EB /* View */,
 				0A4E503C2034873F003AA4EB /* Control */,
@@ -351,11 +468,7 @@
 			isa = PBXGroup;
 			children = (
 				0A4E505520348885003AA4EB /* KeychainWrapper.m */,
-				0A4E505620348885003AA4EB /* NSString+KWMD5.h */,
-				0A4E505720348885003AA4EB /* NSData+KWAES.h */,
-				0A4E505820348885003AA4EB /* NSString+KWMD5.m */,
 				0A4E505920348885003AA4EB /* KeychainWrapper.h */,
-				0A4E505A20348885003AA4EB /* NSData+KWAES.m */,
 			);
 			path = EAUitl;
 			sourceTree = "<group>";
@@ -498,10 +611,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A4E50052034820B003AA4EB /* LaunchScreen.storyboard in Resources */,
+				0A0891582044C7D600E1B402 /* GoogleService-Info.plist in Resources */,
 				0A4E50022034820B003AA4EB /* Assets.xcassets in Resources */,
+				0A08914C20447CB000E1B402 /* KWOthersQuestionTableViewCell.xib in Resources */,
+				0A08914720446D4300E1B402 /* KWQuestionViewCell.xib in Resources */,
 				0A4E50002034820B003AA4EB /* Main.storyboard in Resources */,
 				0A4E503620348558003AA4EB /* KWHomeViewController.xib in Resources */,
+				0A10200F203D369700C6837F /* KWSaveViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +663,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-KWMakeXScreenshots/Pods-KWMakeXScreenshots-resources.sh",
+				"${PODS_ROOT}/MLEmojiLabel/Classes/MLEmoji_Expression.plist",
+				"${PODS_ROOT}/MLEmojiLabel/Classes/MLEmoji_ExpressionImage.plist",
+				"${PODS_ROOT}/MLEmojiLabel/Classes/MLEmoji_Expression.bundle",
+				"${PODS_ROOT}/MLEmojiLabel/Classes/MLEmoji_Expression.bundle/gifexpression.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 			);
@@ -678,24 +798,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4E505B20348885003AA4EB /* UIView+KWFrame.m in Sources */,
-				0A4E506320348885003AA4EB /* NSString+KWMD5.m in Sources */,
-				0A364D3C20375DBA008D0B50 /* KWSettingViewController.m in Sources */,
+				0A089142204464AB00E1B402 /* KWQuestionsViewController.m in Sources */,
+				0A101FF2203D364D00C6837F /* KWSettingViewController.m in Sources */,
+				0A102012203D37D800C6837F /* KWVisitViewController.m in Sources */,
 				0A4E4FFD2034820B003AA4EB /* ViewController.m in Sources */,
 				0A364D3520374E6B008D0B50 /* UIButton+KWButton.m in Sources */,
 				0A71CE4E2036B5FA0024C80B /* UIImage+ColorAtPixel.m in Sources */,
 				0A4E505C20348885003AA4EB /* UIImage+KWImage.m in Sources */,
 				0A4E506020348885003AA4EB /* Utils.m in Sources */,
 				0A4E50082034820B003AA4EB /* main.m in Sources */,
+				0A0FA5F82045D89200C2A862 /* KWGetColorTabViewController.m in Sources */,
 				0A4E503120348284003AA4EB /* KWHomeIPViewController.m in Sources */,
-				0A4E506420348885003AA4EB /* NSData+KWAES.m in Sources */,
+				0A08914B20447CB000E1B402 /* KWOthersQuestionTableViewCell.m in Sources */,
+				0A08913F2044631700E1B402 /* KWHelpViewController.m in Sources */,
+				0A10200E203D369700C6837F /* KWSaveViewController.m in Sources */,
 				0A4E506220348885003AA4EB /* KeychainWrapper.m in Sources */,
 				0A4E506720348A8C003AA4EB /* KWNavigationViewController.m in Sources */,
+				0A1AE670203DD3180036884E /* KWGetColorViewController.m in Sources */,
 				0A4E505F20348885003AA4EB /* UIBarButtonItem+KWBarButtonItem.m in Sources */,
 				0A71CE512036B7500024C80B /* UIImage+KWGetNewImage.m in Sources */,
 				0A4E505D20348885003AA4EB /* UIImage+KWExtension.m in Sources */,
 				0A4E4FFA2034820B003AA4EB /* AppDelegate.m in Sources */,
 				0A4E503520348558003AA4EB /* KWHomeViewController.m in Sources */,
 				0A4E505E20348885003AA4EB /* UIButton+KWMineButton.m in Sources */,
+				0A08914620446D4300E1B402 /* KWQuestionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,14 +863,6 @@
 				0A4E4FFF2034820B003AA4EB /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0A4E50032034820B003AA4EB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A4E50042034820B003AA4EB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -859,14 +977,18 @@
 			baseConfigurationReference = FE2505E596315B563B2AF18F /* Pods-KWMakeXScreenshots.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69MYRJBQQ9;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/k/iOS-KW/KWMakeXScreenshots/KWMakeXScreenshots/Class/Main/Config/KWMakeXScreenshots.pch";
 				INFOPLIST_FILE = KWMakeXScreenshots/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.korwin.cn.KWMakeXScreenshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -875,14 +997,18 @@
 			baseConfigurationReference = 1041CFE75207C4EDFD7540FD /* Pods-KWMakeXScreenshots.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69MYRJBQQ9;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/k/iOS-KW/KWMakeXScreenshots/KWMakeXScreenshots/Class/Main/Config/KWMakeXScreenshots.pch";
 				INFOPLIST_FILE = KWMakeXScreenshots/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.korwin.cn.KWMakeXScreenshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

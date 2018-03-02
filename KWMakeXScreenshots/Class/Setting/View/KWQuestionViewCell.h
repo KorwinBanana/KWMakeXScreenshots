@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <TYAttributedLabel/TYAttributedLabel.h>
 
 @interface KWQuestionViewCell : UITableViewCell
+
+@property (weak, nonatomic) IBOutlet UILabel *questionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 
 @end

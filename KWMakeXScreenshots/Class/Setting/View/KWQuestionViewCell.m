@@ -8,10 +8,19 @@
 
 #import "KWQuestionViewCell.h"
 
+@interface KWQuestionViewCell()
+
+@end
+
 @implementation KWQuestionViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    
+    _questionLabel.font = [UIFont boldSystemFontOfSize:17];
+    _answerLabel.font = [UIFont systemFontOfSize:15];
+//    _questionLabel.backgroundColor = [UIColor redColor];
+//    _answarLabel.backgroundColor = [UIColor blueColor];
     // Initialization code
 }
 

@@ -10,4 +10,6 @@
 
 @interface KWVisitViewController : UIViewController
 
+@property(nonatomic,strong) UIImage *iXImage;
+
 @end

@@ -1,4 +1,7 @@
 # KWMakeXScreenshots
+**-----App Store浏览-----**
+
+![image](https://github.com/KorwinBanana/KWMakeXScreenshots/blob/master/Image/app%20store%E6%B5%8F%E8%A7%88.png)
 
 **-----样张-----**
 

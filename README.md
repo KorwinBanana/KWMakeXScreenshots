@@ -1,6 +1,8 @@
 # KWMakeXScreenshots
 **-----App Store浏览-----**
 
+App Store地址：**[iXShot](https://itunes.apple.com/cn/app/iXShot/id1353774556?mt=8)**
+
 ![image](https://github.com/KorwinBanana/KWMakeXScreenshots/blob/master/Image/app%20store%E6%B5%8F%E8%A7%88.png)
 
 **-----样张-----**
